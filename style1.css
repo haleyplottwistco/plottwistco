@@ -28,10 +28,13 @@ nav {
     padding: 0 1rem;
 }
 
-.logo {
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: bold;
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
 }
 
 .nav-links {
@@ -53,6 +56,27 @@ nav {
 
 .nav-links a:hover {
     color: #ff9800;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #f9500b;
+        padding: 1rem;
+    }
+    .nav-links.active {
+        display: flex;
+    }
 }
 
 /* Hero Section (Slideshow) */
