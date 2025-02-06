@@ -88,6 +88,29 @@ nav {
     opacity: 1;
 }
 
+/* Slideshow Navigation Dots */
+.slideshow-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: white;
+}
+
 /* Slideshow Animation */
 @keyframes fade {
     0% { opacity: 0; }
