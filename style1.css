@@ -104,6 +104,12 @@ ul li {
     font-size: 1.2rem;
 }
 
+        /* Instagram Feed */
+        .instagram-feed {
+            text-align: center;
+            background-color: #dfe6e9;
+            padding: 20px;
+        }
 /* Footer */
 footer {
     text-align: center;
