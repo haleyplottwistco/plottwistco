@@ -158,7 +158,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #b80000;
+    color: #fff;
     text-align: center;
     opacity: 0;
     transition: opacity 1s ease-in-out;
