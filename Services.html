@@ -4,13 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plot Twist Co.</title>
-    <link rel="stylesheet" href="style1.css">
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style1.css"> <!-- Ensure file exists -->
+    <script defer src="script.js"></script> <!-- Remove if not needed -->
+    <style>
+        .logo-image {
+            height: 1in; /* Ensures logo is 1 inch in height */
+            width: auto; /* Maintains aspect ratio */
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Plot Twist Co.</div>
+            <div class="logo-container">
+                <img src="PlotTwist1 (2).png" alt="Plot Twist Co. Logo" class="logo-image">
+                <div class="logo">Plot Twist Co.</div>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="Services.html">Services</a></li>
@@ -22,7 +32,6 @@
             </ul>
         </nav>
     </header>
-
     <section id="about">
         <h2>Branding Services</h2>
         <p><strong>Logo Design Service (Startup or Rebranding with Initiation)</strong><br>
