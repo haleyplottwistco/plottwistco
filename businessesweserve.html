@@ -12,25 +12,49 @@
             width: auto; /* Maintains aspect ratio */
         }
         
-<section class="businesses">
-    <div class="business-card">
-        <img src="business-logo1.png" alt="Business 1 Logo">
-        <h3>Business Name 1</h3>
-        <p>Short description of the business and how we serve them.</p>
-    </div>
+/* Businesses We Serve Section */
+.businesses {
+    display: flex;
+    flex-direction: column; /* Stack businesses vertically */
+    align-items: center; /* Center align the business cards */
+    gap: 20px;
+    padding: 50px 20px;
+    width: 100%;
+}
 
-    <div class="business-card">
-        <img src="business-logo2.png" alt="Business 2 Logo">
-        <h3>Business Name 2</h3>
-        <p>Short description of the business and how we serve them.</p>
-    </div>
+.business-card {
+    background: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    width: 80%; /* Makes each card span most of the page */
+    max-width: 800px; /* Prevents it from becoming too wide */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-    <div class="business-card">
-        <img src="business-logo3.png" alt="Business 3 Logo">
-        <h3>Business Name 3</h3>
-        <p>Short description of the business and how we serve them.</p>
-    </div>
-</section>
+.business-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.business-card img {
+    width: 180px;
+    height: auto;
+    max-height: 100px; /* Adjust based on logo size */
+    margin-bottom: 15px;
+    object-fit: contain; /* Ensures logos keep their aspect ratio */
+}
+
+.business-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.business-card p {
+    font-size: 16px;
+    color: #333;
+}
 
     </style>
 </head>
@@ -54,39 +78,25 @@
         </nav>
     </header>
 
-    <!-- Profiles Section -->
-    <section class="profiles">
-                <div class="profile-card">
-            <img src="Melissa.png" alt="Melissa Mendez">
-            <h3>Melissa Calcara Mendez</h3>
-            <p>Owner & Founder</p>
-            <a href="ContactUs.html" class="contact-button">Contact Us</a>
-        </div>
-        <div class="profile-card">
-            <img src="Michael.jpg" alt="Michael Mendez">
-            <h3>Michael Mendez MA, LPC</h3>
-            <p>Chief Chaos Officer</p>
-            <a href="ContactUs.html" class="contact-button">Contact Us</a>
-        </div>
-        <div class="profile-card">
-            <img src="Hannah.jpg" alt="Hannah Inyart">
-            <h3>Hannah Inyart MBA</h3>
-            <p>Administrative Manager</p>
-            <a href="ContactUs.html" class="contact-button">Contact Us</a>
-        </div>
-                <div class="profile-card">
-            <img src="Haley.jpg" alt="Haley Inyart">
-            <h3>Haley Inyart MFA</h3>
-            <p>Strategic & People Operations Specialist</p>
-            <a href="ContactUs.html" class="contact-button">Contact Us</a>
-        </div>
-                        <div class="profile-card">
-            <img src="Kaitlyn.jpeg" alt="Kaitlyn O'Connell">
-            <h3>Kaitlyn O'Connell</h3>
-            <p>Billing & Claims Specialist</p>
-            <a href="ContactUs.html" class="contact-button">Contact Us</a>
-        </div>
-    </section>
+<section class="businesses">
+    <div class="business-card">
+        <img src="business-logo1.png" alt="Business 1 Logo">
+        <h3>Business Name 1</h3>
+        <p>Short description of the business and how we serve them.</p>
+    </div>
+
+    <div class="business-card">
+        <img src="business-logo2.png" alt="Business 2 Logo">
+        <h3>Business Name 2</h3>
+        <p>Short description of the business and how we serve them.</p>
+    </div>
+
+    <div class="business-card">
+        <img src="business-logo3.png" alt="Business 3 Logo">
+        <h3>Business Name 3</h3>
+        <p>Short description of the business and how we serve them.</p>
+    </div>
+</section>
 
     <footer>
         <p>&copy; 2024 Plot Twist Co. All rights reserved.</p>
