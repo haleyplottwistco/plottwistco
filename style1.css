@@ -72,7 +72,7 @@ body {
 
 /* Navigation */
 header {
-    background: #f9500b;
+    background: #ffffff;
     padding: 1rem 0;
 }
 
@@ -106,7 +106,7 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: #fff;
+    color: #0d1338;
     font-size: 1rem;
     transition: color 0.3s ease-in-out;
 }
