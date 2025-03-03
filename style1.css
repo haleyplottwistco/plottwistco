@@ -128,7 +128,7 @@ nav {
         display: none;
         flex-direction: column;
         width: 100%;
-        background: #f9500b;
+        background: #ffffff;
         padding: 1rem;
     }
     .nav-links.active {
