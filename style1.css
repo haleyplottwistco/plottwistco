@@ -111,8 +111,9 @@ nav {
     transition: color 0.3s ease-in-out;
 }
 
-.nav-links a:hover {
-    color: #ff9800;
+.menu li a:hover {
+    background-color: #ff9800;
+    border-radius: 5px;
 }
 
 /* Responsive Navigation */
