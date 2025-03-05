@@ -23,14 +23,14 @@
 }
 
 .business-card {
-    background: #fcd188;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 30px;
     text-align: center;
-    width: 80%; /* Makes each card span most of the page */
-    max-width: 800px; /* Prevents it from becoming too wide */
+    width: 90%; /* Increases width to take up more space */
+    max-width: 1000px; /* Prevents it from being too wide on larger screens */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: white;
 }
 
 .business-card:hover {
@@ -39,31 +39,16 @@
 }
 
 .business-card img {
-    width: 180px;
+    width: 200px;
     height: auto;
-    max-height: 100px; /* Adjust based on logo size */
+    max-height: 120px;
     margin-bottom: 15px;
     object-fit: contain; /* Ensures logos keep their aspect ratio */
 }
 
 .business-card h3 {
-    font-size: 24px;
+    font-size: 26px;
     margin-bottom: 10px;
-}
-
-.businesses {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.business-card {
-    padding: 20px;
-    border-radius: 10px;
-    color: white;
-    text-align: center;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Individual Business Background Colors */
