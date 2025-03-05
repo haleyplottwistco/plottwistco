@@ -51,9 +51,36 @@
     margin-bottom: 10px;
 }
 
-.business-card p {
-    font-size: 16px;
-    color: #333;
+.businesses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.business-card {
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Individual Business Background Colors */
+.itsco {
+    background-color: #7fe2e4;
+}
+
+.nlu {
+    background-color: #67708c;
+}
+
+.inner-strength {
+    background-color: #77b7ff;
+}
+
+.mh4kidz {
+    background-color: #fac788; 
 }
 
         /* Button Styling */
@@ -96,31 +123,32 @@
     </header>
 
 <section class="businesses">
-    <div class="business-card">
+    <div class="business-card itsco">
         <img src="ITSCOlogo.png" alt="Business 1 Logo">
         <h3>ITSCO - In the School Counseling </h3>
         <p>We offer services that provide children access to licensed therapists within the school setting with direct billing through insurance.</p>
-          <a href="https://www.itsco.health/" class="business-btn" target="_blank">Visit Website</a>
+        <a href="https://www.itsco.health/" class="business-btn" target="_blank">Visit Website</a>
     </div>
 
-    <div class="business-card">
+    <div class="business-card nlu">
         <img src="NLUlogo.png" alt="Business 2 Logo">
         <h3>NEXT LEVEL UP - Learning and Counseling Center</h3>
-        <p>Is your child struggling with self regulation and behaviors, while also struggling academically? Contact us to schedule a therapy session and a tutoring session. We hire certified counselors and teachers to help you.</p>
-          <a href="https://www.nextleveluplcc.com/" class="business-btn" target="_blank">Visit Website</a>
+        <p>Is your child struggling with self-regulation and behaviors, while also struggling academically? Contact us to schedule a therapy session and a tutoring session. We hire certified counselors and teachers to help you.</p>
+        <a href="https://www.nextleveluplcc.com/" class="business-btn" target="_blank">Visit Website</a>
     </div>
 
-    <div class="business-card">
+    <div class="business-card inner-strength">
         <img src="TheInnerStrengthNowords.png" alt="Business 3 Logo">
         <h3>The Inner Strength Institute</h3>
         <p>We are dedicated to supporting men, boys, and athletes, focusing on mental health, and breaking down barriers in these communities.</p>
-     <a href="https://theinnerstrengthinstitute.com/" class="business-btn" target="_blank">Visit Website</a>
+        <a href="https://theinnerstrengthinstitute.com/" class="business-btn" target="_blank">Visit Website</a>
     </div>
-        <div class="business-card">
+
+    <div class="business-card mh4kidz">
         <img src="MH4KidzLogo.png" alt="Business 4 Logo">
         <h3>MH4KIDZ</h3>
-        <p></p>
-     <a href="#" class="business-btn" target="_blank">Coming Soon</a>
+        <p>Coming Soon</p>
+        <a href="#" class="business-btn" target="_blank">Coming Soon</a>
     </div>
 </section>
 
