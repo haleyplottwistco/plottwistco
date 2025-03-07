@@ -12,87 +12,32 @@
             width: auto; /* Maintains aspect ratio */
         }
 
-        /* Hero Section */
-        #hero {
-            width: 80%;
-            height: 20vh; 
-            display: flex;
-            align-items: center;  /* Center vertically */
-            justify-content: center;  /* Center horizontally */
-            text-align: center;
-            color: white; /* Ensure text is visible */
-            font-size: 2.5rem; /* Adjust size as needed */
-            font-weight: bold;
-        }
-
-        /* Slideshow */
-        .slideshow {
-            width: 80%;
-            height: 60vh; /* Adjust height as needed */
-            position: relative;
-            overflow: hidden;
-        }
-
-        .slide {
-            width: 100%;
-            height: 100%; /* Ensures it fills the slideshow container */
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .slide h1 {
-            color: white;
-            font-size: 2rem;
-            background: rgba(0, 0, 0, 0.5); /* Adds contrast */
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        /* Navigation */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-        }
-
-        .logo-container {
-            display: flex;
-            align-items: center;
-        }
-
         .menu-toggle {
             background: none;
             border: none;
-            font-size: 2rem;
+            font-size: 24px;
             cursor: pointer;
+            display: none; /* Shown only in mobile styles */
         }
 
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 15px;
-        }
-
-        .nav-links li {
-            display: inline;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-            background: #f4f4f4;
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background: #fff;
+                position: absolute;
+                width: 100%;
+                top: 60px;
+                left: 0;
+                padding: 10px;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            .nav-links.active {
+                display: flex;
+            }
         }
     </style>
 </head>
@@ -103,13 +48,13 @@
                 <img src="PlotTwist1 (2).png" alt="Plot Twist Co. Logo" class="logo-image">
                 <div class="logo">Plot Twist Co.</div>
             </div>
-            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <button class="menu-toggle" aria-label="Toggle Menu" onclick="toggleMenu()">☰</button>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="Services.html">Services</a></li>
                 <li><a href="About.html">About</a></li>
                 <li><a href="Privacy.html">Privacy</a></li>
-                <li><a href="businessesweserve.html">Businesses We Serve</a></li>
+                <li><a href="BusinessesWeServe.html">Businesses We Serve</a></li>
                 <li><a href="Staff.html">Staff</a></li>
                 <li><a href="ContactUs.html">Contact</a></li>
             </ul>
