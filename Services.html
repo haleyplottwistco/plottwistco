@@ -11,6 +11,34 @@
             height: 1in; /* Ensures logo is 1 inch in height */
             width: auto; /* Maintains aspect ratio */
         }
+
+        .menu-toggle {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            display: none; /* Shown only in mobile styles */
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background: #fff;
+                position: absolute;
+                width: 100%;
+                top: 60px;
+                left: 0;
+                padding: 10px;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            .nav-links.active {
+                display: flex;
+            }
+        }
     </style>
 </head>
 <body>
@@ -20,13 +48,13 @@
                 <img src="PlotTwist1 (2).png" alt="Plot Twist Co. Logo" class="logo-image">
                 <div class="logo">Plot Twist Co.</div>
             </div>
-            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <button class="menu-toggle" aria-label="Toggle Menu" onclick="toggleMenu()">☰</button>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="Services.html">Services</a></li>
                 <li><a href="About.html">About</a></li>
                 <li><a href="Privacy.html">Privacy</a></li>
-                <li><a href="businessesweserve.html">Businesses We Serve</a></li>
+                <li><a href="BusinessesWeServe.html">Businesses We Serve</a></li>
                 <li><a href="Staff.html">Staff</a></li>
                 <li><a href="ContactUs.html">Contact</a></li>
             </ul>
@@ -39,7 +67,7 @@
             <div class="slide fade" style="background-image: url('mountains.png');">
                 <h1>BRANDING SERVICES</h1>
             </div>
-        </div> <!-- Closing missing div -->
+        </div>
     </section>
 
     <section id="about">
@@ -71,49 +99,4 @@
         <p><strong>Tier 3: Seven credits per quarter</strong></p>
         <p><strong>Tier 4: Nine credits per quarter</strong></p>            
 
-        <p><em>Billing and Payroll Client Cost or Additional Credit Value: $50 per credit</em></p>
-
-        <p><strong>Flier Creation Service</strong><br>
-        Design visually engaging flyers for services, events, or promotions. Available in English and Spanish.<br>
-        <em>Cost: One credit per flier</em></p>
-
-        <p><strong>Website Creation & Management</strong><br>
-        Custom, responsive websites optimized for SEO, mobile, and desktop with essential features.<br>
-        <em>Cost: One credit per billable hour</em></p>
-
-        <p><strong>Brochure Design Service</strong><br>
-        Professional brochures detailing services, mission, and values with multiple design iterations.<br>
-        <em>Cost: Two credits per brochure</em></p>
-
-        <p><strong>Business Card Design Service</strong><br>
-        Custom-designed business cards that reflect brand identity.<br>
-        <em>Cost: One credit per design</em></p>
-
-        <p><strong>Branded Merchandise Design</strong><br>
-        Custom designs for promotional merchandise like t-shirts, mugs, and pens.<br>
-        <em>Cost: One credit per design</em></p>
-
-        <p><strong>Digital Graphics Service</strong><br>
-        Infographics, banners, and icons for websites, presentations, and social media.<br>
-        <em>Cost: One credit per design</em></p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p><strong>Email:</strong> info@plottwistco.com</p>
-        <p><strong>Prefer to text us?</strong></p>
-        <p>Send all inquiries regarding service interest or questions about job postings to 833-756-8894</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Plot Twist Co. All rights reserved.</p>
-    </footer>
-
-    <script>
-        function toggleMenu() {
-            const nav = document.querySelector(".nav-links");
-            nav.classList.toggle("active");
-        }
-    </script>
-</body>
-</html>
+        <p><em>Billing and Payroll Client C
