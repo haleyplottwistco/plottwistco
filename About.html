@@ -11,38 +11,89 @@
             height: 1in; /* Ensures logo is 1 inch in height */
             width: auto; /* Maintains aspect ratio */
         }
-        /* Hero Section */
-#hero {
-    width: 80%;
-    height: 20vh; 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-        /* Hero Section */
-#hero {
-    display: flex;
-    align-items: center;  /* Center vertically */
-    justify-content: center;  /* Center horizontally */
-    text-align: center;
-    color: white; /* Ensure text is visible */
-    font-size: 2.5rem; /* Adjust size as needed */
-    font-weight: bold;
-}
 
+        /* Hero Section */
+        #hero {
+            width: 80%;
+            height: 20vh; 
+            display: flex;
+            align-items: center;  /* Center vertically */
+            justify-content: center;  /* Center horizontally */
+            text-align: center;
+            color: white; /* Ensure text is visible */
+            font-size: 2.5rem; /* Adjust size as needed */
+            font-weight: bold;
+        }
+
+        /* Slideshow */
         .slideshow {
-    width: 80%; /* Ensure full width */
-    height: 60vh; /* Adjust height as needed */
-    position: relative;
-    overflow: hidden;
-}
+            width: 80%;
+            height: 60vh; /* Adjust height as needed */
+            position: relative;
+            overflow: hidden;
+        }
 
-.slide {
-    width: 80%;
-    height: 80%; /* Ensures it fills the slideshow container */
-    background-size: cover;
-    background-position: center;
-}
+        .slide {
+            width: 100%;
+            height: 100%; /* Ensures it fills the slideshow container */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slide h1 {
+            color: white;
+            font-size: 2rem;
+            background: rgba(0, 0, 0, 0.5); /* Adds contrast */
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .menu-toggle {
+            background: none;
+            border: none;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-links li {
+            display: inline;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            background: #f4f4f4;
+        }
     </style>
 </head>
 <body>
@@ -64,27 +115,29 @@
             </ul>
         </nav>
     </header>
+
     <!-- Slideshow Hero Section -->
     <section id="hero">
         <div class="slideshow">
             <div class="slide fade" style="background-image: url('computer2.png');">
                 <h1>WE ARE HERE TO SERVE YOU</h1>
             </div>
-
-
-<p>At Plot Twist Co, we are dedicated to supporting the well-being of both mental health professionals and the clients they serve. Our mission is to streamline the administrative side of running a mental health business, so you can focus on what truly matters—providing excellent care.<p>
-​
-<p>With a focus on credentialing, payroll, billing, and everything in between, we handle the complex details that come with managing a counseling practice. Whether you're a solo practitioner or a growing mental health organization, we offer tailored solutions that meet your unique needs. Our team becomes an extension of your business, ensuring that the behind-the-scenes work is seamless and efficient.</p>
-
-<p>We believe in the value of therapy and the importance of client care. That’s why we are committed to taking the burden of administrative tasks off your shoulders, allowing you to prioritize what you do best—helping others. Reach out to us today to see how we can make your practice run smoother and your life a little easier.</p>
-
+        </div>
     </section>
 
+    <section>
+        <p>At Plot Twist Co, we are dedicated to supporting the well-being of both mental health professionals and the clients they serve. Our mission is to streamline the administrative side of running a mental health business, so you can focus on what truly matters—providing excellent care.</p>
+
+        <p>With a focus on credentialing, payroll, billing, and everything in between, we handle the complex details that come with managing a counseling practice. Whether you're a solo practitioner or a growing mental health organization, we offer tailored solutions that meet your unique needs. Our team becomes an extension of your business, ensuring that the behind-the-scenes work is seamless and efficient.</p>
+
+        <p>We believe in the value of therapy and the importance of client care. That’s why we are committed to taking the burden of administrative tasks off your shoulders, allowing you to prioritize what you do best—helping others. Reach out to us today to see how we can make your practice run smoother and your life a little easier.</p>
+    </section>
 
     <footer>
         <p>&copy; 2024 Plot Twist Co. All rights reserved.</p>
     </footer>
-        <script>
+
+    <script>
         function toggleMenu() {
             const nav = document.querySelector(".nav-links");
             nav.classList.toggle("active");
@@ -92,3 +145,4 @@
     </script>
 </body>
 </html>
+
