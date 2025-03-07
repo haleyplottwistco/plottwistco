@@ -216,13 +216,9 @@ nav {
 
 /* Sections */
 section {
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 1rem;
-    background: #e3e2e1;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: transparent; /* Removes the gray */
 }
+
 
 h2 {
     color: #ff9800;
