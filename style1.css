@@ -24,12 +24,12 @@ body {
 }
 
 .form-container {
-    background: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: transparent; /* Removes the white background */
+    border-radius: 0; /* Removes rounded corners */
+    box-shadow: none; /* Removes the shadow effect */
     max-width: 500px;
     width: 100%;
+    padding: 0; /* Optional: Adjust padding if needed */
 }
 
 .contact-form label {
