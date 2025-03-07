@@ -12,6 +12,12 @@ body {
     background-color: #b80000;
     color: #ffffff;
 }
+.logo {
+    color: #000000; /* Change to black or any other color */
+    font-size: 2rem; /* Adjust size if needed */
+    font-weight: bold;
+}
+
 
 /* Contact Form Styles */
 .contact-form-section {
