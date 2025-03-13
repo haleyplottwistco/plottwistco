@@ -40,20 +40,33 @@
             }
         }
         
-/* Rounded Image Styling */
-.rounded-frame {
-    display: block;
-    margin: 20px auto;
-    width: 180px; /* Increased width */
-    height: 180px; /* Increased height */
-    object-fit: cover; /* Ensures the image fills the frame */
-    border-radius: 50%;
-    border: 2px solid #fff;
-    padding: 5px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-        
+        /* Hero Section */
+        #hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px; /* Adjusts spacing between text and image */
+            text-align: left;
+            padding: 40px;
+        }
+
+        #hero h1 {
+            font-size: 2em;
+            max-width: 50%;
+        }
+
+        /* Rounded Image Styling */
+        .rounded-frame {
+            width: 200px; /* Increased width */
+            height: 200px; /* Increased height */
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            padding: 5px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
     </style>
 </head>
 <body>
@@ -78,10 +91,10 @@
 
     <section id="hero">
         <h1>WE ARE HERE TO SERVE YOU</h1>
+        <img src="computer2.png" alt="Computer Illustration" class="rounded-frame">
     </section>
 
     <section>
-        <img src="computer2.png" alt="Computer Illustration" class="rounded-frame">
         <p>At Plot Twist Co, we are dedicated to supporting the well-being of both mental health professionals and the clients they serve. Our mission is to streamline the administrative side of running a mental health business, so you can focus on what truly matters—providing excellent care.</p>
 
         <p>With a focus on credentialing, payroll, billing, and everything in between, we handle the complex details that come with managing a counseling practice. Whether you're a solo practitioner or a growing mental health organization, we offer tailored solutions that meet your unique needs. Our team becomes an extension of your business, ensuring that the behind-the-scenes work is seamless and efficient.</p>
