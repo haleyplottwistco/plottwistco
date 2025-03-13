@@ -253,6 +253,7 @@ ul li {
     text-align: center;
     background-color: #dfe6e9;
     padding: 20px;
+    min-height: 400px; /* Increased height for better visibility */
 }
 
 /* Footer */
