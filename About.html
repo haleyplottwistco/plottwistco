@@ -5,11 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plot Twist Co.</title>
     <link rel="stylesheet" href="style1.css"> <!-- Ensure file exists -->
-    <script defer src="script.js"></script> <!-- Remove if not needed -->
     <style>
+        /* Logo styling */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
         .logo-image {
             height: 1in; /* Ensures logo is 1 inch in height */
-            width: auto; /* Maintains aspect ratio */
+            width: auto;
+        }
+        .logo {
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        /* Navigation styles */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 500;
+        }
+        .nav-links a:hover {
+            color: #555;
         }
 
         .menu-toggle {
@@ -17,9 +48,10 @@
             border: none;
             font-size: 24px;
             cursor: pointer;
-            display: none; /* Shown only in mobile styles */
+            display: none;
         }
 
+        /* Mobile styles */
         @media (max-width: 768px) {
             .menu-toggle {
                 display: block;
@@ -30,7 +62,7 @@
                 background: #fff;
                 position: absolute;
                 width: 100%;
-                top: 60px;
+                top: 70px;
                 left: 0;
                 padding: 10px;
                 box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -39,26 +71,34 @@
                 display: flex;
             }
         }
-        
+
         /* Hero Section */
         #hero {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 20px; /* Adjusts spacing between text and image */
+            gap: 20px;
             text-align: left;
             padding: 40px;
         }
-
         #hero h1 {
             font-size: 2em;
             max-width: 50%;
         }
+        @media (max-width: 768px) {
+            #hero {
+                flex-direction: column;
+                text-align: center;
+            }
+            #hero h1 {
+                max-width: 100%;
+            }
+        }
 
         /* Rounded Image Styling */
         .rounded-frame {
-            width: 200px; /* Increased width */
-            height: 200px; /* Increased height */
+            width: 200px;
+            height: 200px;
             object-fit: cover;
             border-radius: 50%;
             border: 2px solid #fff;
@@ -67,16 +107,23 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f5f5f5;
+            margin-top: 40px;
+        }
     </style>
 </head>
 <body>
     <header>
         <nav>
             <div class="logo-container">
-                <img src="PlotTwist1 (2).png" alt="Plot Twist Co. Logo" class="logo-image">
+                <img src="PlotTwist1 (2).png" alt="Plot Twist Co." class="logo-image">
                 <div class="logo">Plot Twist Co.</div>
             </div>
-            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation menu">☰</button>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="Services.html">Services</a></li>
@@ -106,7 +153,7 @@
         <p>&copy; 2024 Plot Twist Co. All rights reserved.</p>
     </footer>
 
-        <script>
+    <script>
         function toggleMenu() {
             const nav = document.querySelector(".nav-links");
             nav.classList.toggle("active");
